@@ -25,6 +25,8 @@ ALTER TABLE nombre_de_la_tabla RENAME TO nombre_nuevo_de_la_tabla --renombra la 
 
 ALTER TABLE nombre_de_la_tabla ADD COLUMN nombre_de_la_nueva_columna propiedades_de_la_columna
 
+SELECT * FROM bus WHERE capacidad >80;--todos los buses con capacidad mayor a 80
+SELECT count(*) FROM bus ;--total registros de la tabla bus
 
 UPDATE nombre_de_la_tabla SET nombre_de_la_columna 
 
