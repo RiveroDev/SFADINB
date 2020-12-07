@@ -1,0 +1,71 @@
+--sentencias SQL
+
+--Esto es un comentario
+/*esto es un comentario
+de dos a más líneas
+en sqlite*/
+
+/*
+date
+datetime
+char()
+varchar()
+INTEGER
+text
+changes
+NULL
+NOT 
+NOTHING
+NOTNULL
+AUTOINCREMENT
+
+SELECT * FROME nombre_de_la_tabla  --selecciona todo los datos de la tabla 
+
+ALTER TABLE nombre_de_la_tabla RENAME TO nombre_nuevo_de_la_tabla --renombra la tabla 
+
+ALTER TABLE nombre_de_la_tabla ADD COLUMN nombre_de_la_nueva_columna propiedades_de_la_columna
+
+
+UPDATE nombre_de_la_tabla SET nombre_de_la_columna 
+
+-----------------------------------------------
+sentencias 
+*/
+
+-- crear tablas 
+
+CREATE TABLE "Pelicula" (
+	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"Nombre" VARCHAR(60) NOT NULL,
+	"Nombre2" VARCHAR(60) NOT NULL,
+    "Fecha"   DATE ,
+    "formato" VARCHAR(10),
+    "posicion" VARCHAR(10),
+	FOREIGN KEY("formato") REFERENCES "Formato"("idF"),
+	FOREIGN KEY("posicion") REFERENCES "Posicion"("idP")
+)
+
+-- en la tabla Pelicula se colocan las claves foraneas de las tablas Formato y Posicion
+-- esto es para poder conectar las tablas a la relacion
+
+CREATE TABLE "Formato" (
+	"idF"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"tipo"	VARCHAR(10) NOT NULL
+)
+
+CREATE TABLE "Posicion" (
+	"idP"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT ,
+	"Ubicacion" VARCHAR(10) NOT NULL,
+)
+
+
+-- consultas 
+
+SELECT * FROME Pelicula
+
+SELECt * FROME Formato
+
+SELECT * FROME Posicion
+
+
+ 
