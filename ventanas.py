@@ -1,13 +1,17 @@
-
-
+from os import system
+import time
 
 def inicio():
+    system("cls")  # limpia completamente la pantalla de terminal 
+    
     print("""
 Listado de Peliculas Movie Market
         Bienvenidos
 """)
+    time.sleep(5)  # da una pausa de 5 seg
 
 def menu():
+    system("cls")
     print("""
  ----- Opciones ----------
   Selecione 1 opcion de Peliculas
@@ -28,11 +32,11 @@ class PeliculaNueva():
         self.ubicacion_disco = input("Ubicacino del disco o Pelicula: ")
 
     def buscarBd():
-        return 
+        returnc
 
     def tipoFormato():
-        return 
+        return b
 
     def ubicacionBd():
-        return 
+        return a
 
