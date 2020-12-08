@@ -1,5 +1,5 @@
 
-import sqlite3 as 
+import sqlite3 as DB
 
 class Conexines():
     """crear un objeto que se conexta a la base de datos """
