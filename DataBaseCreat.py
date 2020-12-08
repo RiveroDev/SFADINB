@@ -10,7 +10,7 @@ import sqlite3 as sq3
 class CreadorBD():
     
     def __init__(self):
-        self.nameDataBase = ""
+        self.nameDataBase = "MovieMarket.db"
         self.estado = False
 
     def renameDB(self):
@@ -19,9 +19,6 @@ class CreadorBD():
         if estado.upper() == "S":
             nuevoNombre = (input("Escriba el Nombre de la BD: ")+".db")
             self.nameDataBase = nuevoNombre
-        else:
-            print("por defecto se asigna MovieMarket.db ")
-            self.nameDataBase = "MovieMarket.db"  # nombre de la base de datos 
 
     def existeBaseDatos(self):
         if path.exists(self.nameDataBase) != True:

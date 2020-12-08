@@ -1,38 +1,44 @@
 
 import sqlite3 as DB
+from DataBaseCreat import *
 
-class Conexines():
+
+class Conexines(CreadorBD):
     """crear un objeto que se conexta a la base de datos """
 
-    def __init__(self):
-        self.Name_DB = 
+    #def __init__(self):
+    #    self.Name_DB = ""
 
-    def conexionSQL(Name_DB):
-        """recive un str con el nombre de la base de datos 
+    def conexionSQL(self):
+
+        """Recive un str con el nombre de la base de datos 
         o en su defecto la direccion completa con el nombre de la
-        base de datos, y retorna la conexcion
-        ejemplo :
-            Name_DB = "basedeDatos.bd"    
-            Name_DB = "C:\Users\Movie Market\Documents\Proyecto invetario Python\SFADINB\basedeDatos.bd """"
-        conexion = DB.connect(Name_DB)
-        return conexion
+        base de datos, y retorna la conexcion """
 
-    def peticionbd(conexion_BD):
-        """ Recive un objetos con la conexion a la 
-        Base de datos y regresa un puntero que crea la conexion 
+        self.conexion = DB.connect(self.nameDataBase)
+        return self.conexion
+
+    def peticionbd(self):
+
+        """ Recive un objetos con la conexion a la Base de datos
+         y regresa un puntero que crea la conexion 
         donde se podran dar las ordenes SQL"""
-        return puntero = conexion_BD.cursor()
+
+        self.puntero = self.conexion.cursor()
+        return self.puntero
+
+    def consultabd(self):
+
+        self.puntero.execute("SELECT * FROM self.nameDataBase")
         
-    def consultabd():
-        SELECT * FROM 
 
-    def ingresarbd():
+    def ingresarbd(self):
         pass
 
-    def modificarbd():
+    def modificarbd(self):
         pass
 
-    def borrarbd():
+    def borrarbd(self):
         pass
 
 
