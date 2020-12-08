@@ -30,11 +30,7 @@ class Menus():
         print("""
     ----- Opciones ----------
     Igrese los datos de la Pelicula que desea buscar
-    1. Buscar 
-    2. Ingresar 
-    3. Modificar 
-    4. Eliminar 
-    5. Salir 
+    
     ------------------------
         """)
 
@@ -42,14 +38,10 @@ class Menus():
         system("cls")
         print("""
     ----- Opciones ----------
-    Selecione 1 para buscar la pelicula 
-    1. Buscar 
-    2. Ingresar 
-    3. Modificar 
-    4. Eliminar 
-    5. Salir 
+    Escriba los datos para hacer un nuevo registro de pelicula 
     ------------------------
         """)
+        return nueva_Pelicula = PeliculaNueva()
 
 
 class PeliculaNueva():
