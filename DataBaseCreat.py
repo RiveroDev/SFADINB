@@ -15,7 +15,7 @@ class CreadorBD():
 
     def renameDB(self):
         print("Desea crear una Nueva Base de datos: S/N")
-        estado = input("ingrese: ")
+        estado = input("ingrese respuesta: ")
         if estado.upper() == "S":
             nuevoNombre = (input("Escriba el Nombre de la BD: ")+".db")
             self.nameDataBase = nuevoNombre
@@ -35,7 +35,7 @@ class CreadorBD():
             print("La Base de datos existe")
         else:
             print("La Base de datos no Existe desea crrear una: S/N")
-            opcion = input()
+            opcion = input("ingrese respuesta: ")
             if opcion.upper() == "S":
                 db = sq3.connect(self.nameDataBase)
                 db.close()
