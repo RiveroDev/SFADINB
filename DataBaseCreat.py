@@ -8,12 +8,21 @@ import sqlite3 as sq3
 
 
 class CreadorBD():
-
+    
     def __init__(self):
-        nameDataBase = "MovieMarket.db"  # nombre de la base de datos 
+        self.nameDataBase = ""
 
-    def existeBaseDatos(self):
-        if path.exists(nameDataBase) != True:
+    def renameDB(self):
+        print("Desea crear una Nueva Base de datos: S/N")
+        estado = input("ingrese: ")
+        if estado.upper() == "S":
+            nuevoNombre = input("Escriba el Nombre de la BD")
+            self.nameDataBase = nuevoNombre
+        else:
+            self.nameDataBase = "MovieMarket.db"  # nombre de la base de datos 
+
+    def existeBaseDatos(self,nameDataBase):
+        if path.exists(self.nameDataBase) != True:
             return False
         else:
             return True
@@ -26,14 +35,11 @@ class CreadorBD():
             print("La Base de datos no Existe desea crrear una: S/N")
             opcion = input()
             if opcion.upper() == "S":
-                db = sq3.connect(nameDataBase)
+                db = sq3.connect(self.nameDataBase)
                 db.close()
             else:
                 print("Acuerdese no tiene base de dato activa")
 
-
-estado = existeBaseDatos()
-crearBaseDatos(estado)
     
 
 
