@@ -21,7 +21,7 @@ def consultabd():
     pass
 
 def ingresarbd():
-    
+    pass
 
 def modificarbd():
     pass

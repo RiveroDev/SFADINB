@@ -2,12 +2,13 @@
 
 import ventanas as ven
 
-ven.inicio()
 
-ven.menu()
 
-pep = ven.PeliculaNueva()
+if __name__ == '__main__':    # 
+    window = Tk()
+    application = Product(window)
+    window.mainloop()
 
-print(pep.nombreMovie)
-print(pep.tipoformato)
-print(pep.ubicacion_disco)
+pep = ven.Menus
+
+pep.menu()

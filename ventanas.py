@@ -1,27 +1,56 @@
 from os import system
 import time
 
-def inicio():
-    system("cls")  # limpia completamente la pantalla de terminal 
+class Menus():
     
-    print("""
-Listado de Peliculas Movie Market
-        Bienvenidos
-""")
-    time.sleep(5)  # da una pausa de 5 seg
-
-def menu():
-    system("cls")
-    print("""
- ----- Opciones ----------
-  Selecione 1 opcion de Peliculas
-  1. Buscar 
-  2. Ingresar 
-  3. Modificar 
-  4. Eliminar 
-  5. Salir 
-  ------------------------
+    def inicio(self):
+        system("cls")  # limpia completamente la pantalla de terminal 
+        
+        print("""
+    Listado de Peliculas Movie Market
+            Bienvenidos
     """)
+        time.sleep(5)  # da una pausa de 5 seg
+
+    def menu(self):
+        system("cls")
+        print("""
+    ----- Opciones ----------
+    Selecione 1 opcion de Peliculas
+    1. Buscar 
+    2. Ingresar 
+    3. Modificar 
+    4. Eliminar 
+    5. Salir 
+    ------------------------
+        """)
+
+    def menu_buscar():
+        system("cls")
+        print("""
+    ----- Opciones ----------
+    Igrese los datos de la Pelicula que desea buscar
+    1. Buscar 
+    2. Ingresar 
+    3. Modificar 
+    4. Eliminar 
+    5. Salir 
+    ------------------------
+        """)
+
+    def menu_ingresar():
+        system("cls")
+        print("""
+    ----- Opciones ----------
+    Selecione 1 para buscar la pelicula 
+    1. Buscar 
+    2. Ingresar 
+    3. Modificar 
+    4. Eliminar 
+    5. Salir 
+    ------------------------
+        """)
+
 
 class PeliculaNueva():
     """clase se tienes los atributos para crear un objeto pelicula"""
@@ -31,12 +60,12 @@ class PeliculaNueva():
         self.tipoformato = input("Ingrese el tipo de formato del disco, 1.DVD 2.BlueRay:  ")
         self.ubicacion_disco = input("Ubicacino del disco o Pelicula: ")
 
-    def buscarBd():
+    def buscarBd(self):
         return c
 
-    def tipoFormato():
+    def tipoFormato(self):
         return b
 
-    def ubicacionBd():
+    def ubicacionBd(self):
         return a
 

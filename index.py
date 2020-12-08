@@ -1,4 +1,6 @@
 
+
+# 
 # Nota quedasmos en el minuto 36 del video de fazt
 
 from tkinter import ttk      # llamamos a la liberia 'tkinter' ttK
