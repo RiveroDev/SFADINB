@@ -11,25 +11,27 @@ class CreadorBD():
     
     def __init__(self):
         self.nameDataBase = ""
+        self.estado = False
 
     def renameDB(self):
         print("Desea crear una Nueva Base de datos: S/N")
         estado = input("ingrese: ")
         if estado.upper() == "S":
-            nuevoNombre = input("Escriba el Nombre de la BD")
+            nuevoNombre = (input("Escriba el Nombre de la BD: ")+".db")
             self.nameDataBase = nuevoNombre
         else:
+            print("por defecto se asigna MovieMarket.db ")
             self.nameDataBase = "MovieMarket.db"  # nombre de la base de datos 
 
-    def existeBaseDatos(self,nameDataBase):
+    def existeBaseDatos(self):
         if path.exists(self.nameDataBase) != True:
             return False
         else:
+            self.estado = True
             return True
 
-    def  crearBaseDatos(self,estado):
-        existe = estado
-        if existe == True:
+    def  crearBaseDatos(self):
+        if self.estado == True:
             print("La Base de datos existe")
         else:
             print("La Base de datos no Existe desea crrear una: S/N")
