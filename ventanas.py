@@ -32,7 +32,7 @@ class PeliculaNueva():
         self.ubicacion_disco = input("Ubicacino del disco o Pelicula: ")
 
     def buscarBd():
-        returnc
+        return c
 
     def tipoFormato():
         return b
