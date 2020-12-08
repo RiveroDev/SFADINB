@@ -25,7 +25,7 @@ class Menus():
     ------------------------
         """)
 
-    def menu_buscar():
+    def menu_buscar(self):
         system("cls")
         print("""
     ----- Opciones ----------
@@ -38,7 +38,7 @@ class Menus():
     ------------------------
         """)
 
-    def menu_ingresar():
+    def menu_ingresar(self):
         system("cls")
         print("""
     ----- Opciones ----------
