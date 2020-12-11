@@ -1,5 +1,12 @@
+
+from tkinter import * as tk
+
 from os import system
 import time
+
+
+
+
 
 class Menus():
     
