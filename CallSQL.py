@@ -4,7 +4,7 @@ from DataBaseCreat import *
 
 
 class Conexines(CreadorBD):
-    """crear un objeto que se conexta a la base de datos """
+    """crear un objeto que se conecta a la base de datos """
 
     #def __init__(self):
     #    self.Name_DB = ""

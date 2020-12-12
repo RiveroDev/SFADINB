@@ -1,54 +1,15 @@
 
-from tkinter import * as tk
+import tkinter 
 
 from os import system
 import time
 
+ventana = tkinter.Tk()
 
+ventana.title(" Movie MArket SRL Sistema de Registros")
+ventana.geometry( x = 200 , y = 3000)
 
-
-
-class Menus():
-    
-    def inicio(self):
-        system("cls")  # limpia completamente la pantalla de terminal 
-        
-        print("""
-    Listado de Peliculas Movie Market
-            Bienvenidos
-    """)
-        time.sleep(5)  # da una pausa de 5 seg
-
-    def menu(self):
-        system("cls")
-        print("""
-    ----- Opciones ----------
-    Selecione 1 opcion de Peliculas
-    1. Buscar 
-    2. Ingresar 
-    3. Modificar 
-    4. Eliminar 
-    5. Salir 
-    ------------------------
-        """)
-
-    def menu_buscar(self):
-        system("cls")
-        print("""
-    ----- Opciones ----------
-    Igrese los datos de la Pelicula que desea buscar
-    
-    ------------------------
-        """)
-
-    def menu_ingresar(self):
-        system("cls")
-        print("""
-    ----- Opciones ----------
-    Escriba los datos para hacer un nuevo registro de pelicula 
-    ------------------------
-        """)
-        return nueva_Pelicula = PeliculaNueva()
+ventana.mainloop()
 
 
 class PeliculaNueva():
@@ -60,11 +21,10 @@ class PeliculaNueva():
         self.ubicacion_disco = input("Ubicacino del disco o Pelicula: ")
 
     def buscarBd(self):
-        
+        pass
 
     def tipoFormato(self):
         return b
 
     def ubicacionBd(self):
         return a
-
