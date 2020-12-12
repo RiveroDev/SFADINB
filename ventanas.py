@@ -9,11 +9,13 @@ ventana = tk.Tk()
 ventana.title(" Movie Market.. Sistema de Registros y Adminstracion") # titulo del programa 
 ventana.geometry('500x400') # dimencion de la ventana 
 # estas son las etiquetas 
-etiqueta_nombre = tk.Label(ventana, text="Nombre").pack()
-etiqueta_nombre2 = tk.Label(ventana, text ="Nombre2").pack()
-etiqueta_Ubicacion = tk.Label(ventana, text = "Ubicacion").pack()
+etiqueta_nombre = tk.Label(ventana, text="Nombre").grid(row=0)
+etiqueta_nombre2 = tk.Label(ventana, text ="Nombre2").grid(row=2)
+etiqueta_Ubicacion = tk.Label(ventana, text = "Ubicacion").grid(row=3)
 
-
+entrada_nombre  = tk.Entry(ventana).grid(row=0, column=1)
+entrada_nombre2 = tk.Entry(ventana).grid(row=2, column=1)
+entrada_Ubicacion = tk.Entry(ventana).grid(row=3, column=1)
 
 ventana.mainloop()
 
