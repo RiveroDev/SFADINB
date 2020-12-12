@@ -1,13 +1,19 @@
 
-import tkinter 
+import tkinter as tk
 
 from os import system
 import time
 
-ventana = tkinter.Tk()
+ventana = tk.Tk()
 
-ventana.title(" Movie Market.. Sistema de Registros y adminstracion")
-ventana.geometry('500x400')
+ventana.title(" Movie Market.. Sistema de Registros y Adminstracion") # titulo del programa 
+ventana.geometry('500x400') # dimencion de la ventana 
+# estas son las etiquetas 
+etiqueta_nombre = tk.Label(ventana, text="Nombre").pack()
+etiqueta_nombre2 = tk.Label(ventana, text ="Nombre2").pack()
+etiqueta_Ubicacion = tk.Label(ventana, text = "Ubicacion").pack()
+
+
 
 ventana.mainloop()
 
