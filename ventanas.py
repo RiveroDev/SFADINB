@@ -6,8 +6,8 @@ import time
 
 ventana = tkinter.Tk()
 
-ventana.title(" Movie MArket SRL Sistema de Registros")
-ventana.geometry( x = 200 , y = 3000)
+ventana.title(" Movie Market.. Sistema de Registros y adminstracion")
+ventana.geometry('500x400')
 
 ventana.mainloop()
 
