@@ -1,4 +1,27 @@
 
+12/12/2020
+
+1.- crear una pequeña ventana de prensentacion , donde se accederar a el programa
+    esta pantalla tendra 2 entradas para Usuario y contraseña
+    a parte de el logo de la empresa ..
+    . se colocarar 1 o dos bonotes de opciones para poder iniciar el programa por primera vez
+2.  estos 2 bonotenes es para el registro de empresa y registro de usuario 
+    esto dara la opcion de iniciar las bases de datos y todo lo que se requiere con las conexiones 
+
+    # nota las liibrerias de SQLite  estan casi listas en la libreria CallSQL.py 
+     invetigar como pasar de una ventana a otro o como desplegar una ventana para las opciones 
+     y borrar pantallas
+     
+---------------------------------------------------------------------------------------------------
+
+
+haciendo las modificacions de la primera ventana 
+
+
+
+
+
+
 
 
 "creamos una tabla dentro de la base de datos

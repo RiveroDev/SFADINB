@@ -17,6 +17,7 @@ entrada_nombre  = tk.Entry(ventana).grid(row=0, column=1)
 entrada_nombre2 = tk.Entry(ventana).grid(row=2, column=1)
 entrada_Ubicacion = tk.Entry(ventana).grid(row=3, column=1)
 
+
 ventana.mainloop()
 
 
