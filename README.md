@@ -18,3 +18,7 @@ Posterior mente se ira modificando este README para ir anexando y agregando info
 
 El repositorio es de carapter educativo.
 
+-----------------------------------------------------------------------------------
+ Mejora porpuestas pasar de base de datos SQL a NoSQl 
+ 
+  uso de la plataforma MongoDb Atlas y o base de datos en la pc
