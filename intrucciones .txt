@@ -18,12 +18,6 @@
 haciendo las modificacions de la primera ventana 
 
 
-
-
-
-
-
-
 "creamos una tabla dentro de la base de datos
  con la instruccion "
 
@@ -32,3 +26,6 @@ CREATE TABLE product(
     name TEXT NOT NULL,
     price REAL NOT NULL
 );
+
+
+
