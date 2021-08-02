@@ -10,11 +10,11 @@ if __name__=='__main__':
   llaves = llaves()
   #creamos un diccionarios con los parametro necesarios para hacer la consulta
   argum = {'t':'Mamamia','plot':'full'}
+  llaves.update(argum)
   url ='http://www.omdbapi.com'
   print(llaves)
-  args = llaves.update(argum)
 
-  respuesta = requests.get(url,params=args) # respuesta del servidor 
+  respuesta = requests.get(url,params=argum) # respuesta del servidor 
   # print(respuesta) imprime el estatus dependiendo del numero se sabes is el servidor esta activo o no 
   # 
   print(respuesta.url)
