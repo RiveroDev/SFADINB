@@ -14,7 +14,7 @@ if __name__=='__main__':
   url ='http://www.omdbapi.com'
   print(llaves)
 
-  respuesta = requests.get(url,params=argum) # respuesta del servidor 
+  respuesta = requests.get(url,params=argum) # respuesta del servidor , el 
   # print(respuesta) imprime el estatus dependiendo del numero se sabes is el servidor esta activo o no 
   # 
   print(respuesta.url)
