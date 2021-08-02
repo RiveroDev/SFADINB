@@ -2,17 +2,17 @@
 En este ejercicio se esta consumiendo un repositorio de la pagina web omdb para la consulta de titulos 
 de peliculas 
 """
-
+from llaves import llaves
 import requests
 import json
 
 if __name__=='__main__':
-
-  keys = open('llaves.txt','r')
+  llaves = llaves()
   #creamos un diccionarios con los parametro necesarios para hacer la consulta
-  print(keys)
+  argum = {'t':'Mamamia','plot':'full'}
   url ='http://www.omdbapi.com'
-  args = keys+{'t':'Mamamia','plot':'full'}
+  print(llaves)
+  args = llaves.update(argum)
 
   respuesta = requests.get(url,params=args) # respuesta del servidor 
   # print(respuesta) imprime el estatus dependiendo del numero se sabes is el servidor esta activo o no 
