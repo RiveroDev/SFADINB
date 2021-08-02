@@ -8,9 +8,11 @@ import json
 
 if __name__=='__main__':
 
+  keys = open('llaves.txt','r')
   #creamos un diccionarios con los parametro necesarios para hacer la consulta
+  print(keys)
   url ='http://www.omdbapi.com'
-  args = {'i':'tt3896198','apikey':'9d9bd8ba','t':'Mamamia','plot':'full'}
+  args = keys+{'t':'Mamamia','plot':'full'}
 
   respuesta = requests.get(url,params=args) # respuesta del servidor 
   # print(respuesta) imprime el estatus dependiendo del numero se sabes is el servidor esta activo o no 
