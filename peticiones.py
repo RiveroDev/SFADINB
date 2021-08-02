@@ -12,14 +12,11 @@ if __name__=='__main__':
   argum = {'t':'Mamamia','plot':'full'}
   llaves.update(argum)  # concatenando los diccionarios con las llaves u las preguntas
   url ='http://www.omdbapi.com'
-  print(llaves)
-
-  respuesta = requests.get(url,params=argum) # respuesta del servidor , el 
+ 
+  respuesta = requests.get(url,params=llaves) # respuesta del servidor , el 
   # print(respuesta) imprime el estatus dependiendo del numero se sabes is el servidor esta activo o no 
   # 
-  print(respuesta.url)
   if respuesta.status_code == 200:
-    
     # de esta forma puedo obtener la informacion contenida en el json y buscarlo directamente por su clave 
     json_conenido = json.loads(respuesta.text)
     img_web = json_conenido['Poster']
