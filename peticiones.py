@@ -7,10 +7,10 @@ import requests
 import json
 
 if __name__=='__main__':
-  llaves = llaves()
+  llaves = llaves()  # las llaves estan en el modulo llaves , esta es la llamada a el contenido 
   #creamos un diccionarios con los parametro necesarios para hacer la consulta
   argum = {'t':'Mamamia','plot':'full'}
-  llaves.update(argum)
+  llaves.update(argum)  # concatenando los diccionarios con las llaves u las preguntas
   url ='http://www.omdbapi.com'
   print(llaves)
 
